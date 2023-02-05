@@ -340,6 +340,15 @@ footer{
     background-color: var(--dark-gray);
     padding-block: 3rem;
 }
+.btn__up{
+    position: relative;
+}
+.scroll__top{
+    position: absolute;
+    width: 12rem;
+    right: 15rem;
+    top: 12rem;
+}
 /*999.98px*/
     @media (max-width: 62.49875em){
         .contact__wrapper{
