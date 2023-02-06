@@ -1,10 +1,14 @@
 /* Global*/
 :root{
-    --background: #151515;
-    --dark-gray: #242424;
-    --accent: #8DE4FF;
-    --text1: #fff;
-    --text2: #d9d9d9;    
+    /*--background: #151515;*/
+    --background: #ffffff;
+    /*--dark-gray: #242424;*/
+    --dark-gray: #f5f5f5;
+    --accent: #ffdb8d;
+    /*--text1: #fff;*/
+    /*--text2: #d9d9d9;*/
+    --text1: #000000;
+    --text2: #949494;    
     --invalid: #ff6f5b;
     --fs-88: 5.5rem;
     --fs-72: 4.5rem;
@@ -42,11 +46,11 @@ body {
 }
 .title__web {
     color: var(--text1);
-    font-size: var(--fs-40);
+    font-size: var(--fs-32);
 }
 .title__web:hover {
     color: var(--accent);
-    font-size: var(--fs-40);
+    
 
 }
 h1, h2, h3 {
@@ -148,9 +152,16 @@ a.underline:hover {
     align-items: center;
     justify-content: center;
     }
+    .header__social svg{
+        fill: var(--text1)
+    }
+    .header__home svg {
+        fill: var(--text1)
+    }
     .header__social svg > path {
         transition: fill var(--transition);
     }
+
     .header__social svg {
         
         
@@ -553,12 +564,13 @@ footer{
         width: 100%;
         height: 100%;   
         top: 0;     
-        background-color: hsl(0, 0%, 0%);
+        background-color: hsl(0, 0%, 87%);
         opacity: 0;
         transition: opacity 150ms ease-in-out;
     }
     .projects__item:hover .projects__picture:after {
-        opacity: 0.6;
+        opacity: 0.7;
+        backdrop-filter: blur(5px);
     }
     .projects__tags {
         margin-block-end: 0;
@@ -574,6 +586,7 @@ footer{
         z-index: 1;
         opacity: 0;
         transition: opacity 500ms ease-in-out;
+        
     }
     .projects__links:hover ~ .projects__picture::after{
         opacity: 0.6;
