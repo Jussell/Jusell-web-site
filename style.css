@@ -46,7 +46,8 @@ body {
 }
 .title__web {
     color: var(--text1);
-    font-size: var(--fs-32);
+    font-size: var(--fs-24);
+    transition: color 250ms ease-in-out;
 }
 .title__web:hover {
     color: var(--accent);
@@ -144,28 +145,25 @@ a.underline:hover {
     text-decoration: none;
     flex: 1 0 100%;
     }
-    .header__home:hover {
+    .header__home:hover  {
         color: var(--accent);
+        fill: var(--accent);
+        
     }
     .header__social {
     display: flex;
     align-items: center;
     justify-content: center;
     }
+
     .header__social svg{
         fill: var(--text1)
     }
-    .header__home svg {
-        fill: var(--text1)
-    }
+    
     .header__social svg > path {
         transition: fill var(--transition);
     }
 
-    .header__social svg {
-        
-        
-    }
     .header__social:hover path {
         fill: var(--accent); /*fill uses for svg to change the color*/
     }
@@ -508,7 +506,7 @@ footer{
             margin-right: -50px;
     }
     .hero__image {
-            margin-top: -199px;
+        margin-top: -150px;
             
     }
     .hero__wrapper {
